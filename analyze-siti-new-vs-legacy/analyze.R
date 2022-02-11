@@ -12,7 +12,7 @@ read_plus <- function(flnm, ...) {
 
 # ==========================================================================================
 
-df.scene_cuts = list.files(pattern = "scene_cuts.csv", full.names = T) %>% 
+df.scene_cuts = list.files("data", pattern = "scene_cuts.csv", full.names = T) %>% 
   map_df(~read_plus(., col_names = "n")) %>% 
   mutate(across(filename, basename)) %>% 
   mutate_at("filename", str_remove, "_SDR-scene_cuts.csv") %>% 
@@ -20,7 +20,7 @@ df.scene_cuts = list.files(pattern = "scene_cuts.csv", full.names = T) %>%
   rename(video = filename) %>% 
   mutate_at("video", str_extract, "([a-zA-Z]+)")
 
-df.siti_legacy = list.files(pattern = "siti_legacy.csv", full.names = T) %>% 
+df.siti_legacy = list.files("data", pattern = "siti_legacy.csv", full.names = T) %>% 
   map_df(~read_plus(.)) %>% 
   mutate(across(filename, basename)) %>% 
   select(-input_file) %>% 
@@ -33,7 +33,7 @@ df.siti_legacy = list.files(pattern = "siti_legacy.csv", full.names = T) %>%
   mutate(variant = "legacy") %>% 
   rename(video = filename)
 
-df.siti_new = list.files(pattern = "siti.csv", full.names = T) %>% 
+df.siti_new = list.files("data", pattern = "siti.csv", full.names = T) %>% 
   map_df(~read_plus(.)) %>% 
   mutate(across(filename, basename)) %>% 
   select(-input_file) %>% 
@@ -46,7 +46,7 @@ df.siti_new = list.files(pattern = "siti.csv", full.names = T) %>%
   mutate(variant = "new") %>% 
   rename(video = filename)
 
-df.yavg = list.files(pattern = "YAVG.csv", full.names = T) %>% 
+df.yavg = list.files("data", pattern = "YAVG.csv", full.names = T) %>% 
   map_df(~read_plus(., col_names = c("yavg"), col_select = c("yavg"))) %>% 
   mutate(across(filename, basename)) %>% 
   mutate_at("filename", str_remove, "-YAVG.csv") %>% 
@@ -77,7 +77,9 @@ df.siti =
 df.siti %>% ggplot(aes(x = si.legacy, y = si.new)) + 
   geom_pointdensity(adjust = 10) + 
   scale_color_viridis_c() +
-  facet_grid(video~type)
+  facet_grid(video~type) +
+  theme(legend.position = "none")
+ggsave("plots/legacy_vs_new.pdf")
 
 # over time
 df.siti %>% 
@@ -87,6 +89,7 @@ df.siti %>%
   ggplot(aes(x = n, y = value, color = variant)) +
   geom_line() +
   facet_grid(video~.)
+ggsave("plots/sdr_legacy_vs_new_over_time.pdf")
 
 # over time, scaled
 df.siti %>% 
@@ -99,26 +102,29 @@ df.siti %>%
   ggplot(aes(x = n, y = value, color = variant)) +
   geom_line() +
   facet_grid(video~.)
+ggsave("plots/sdr_legacy_vs_new_over_time_scaled.pdf")
 
 # compare SDR and HDR variants
 df.siti %>% 
   ggplot(aes(x = si.new, fill = type)) +
   geom_density(alpha = 0.3) +
   facet_grid(video~.)
+ggsave("plots/sdr_vs_hdr_density.pdf")
 
 df.siti %>% 
   select(-starts_with("ti")) %>% 
   ggplot(aes(x = n, y = si.new, color = type)) +
   geom_line() +
   facet_grid(video~.)
+ggsave("plots/sdr_vs_hdr_over_time.pdf")
 
 # spread between old and new
-df.siti %>% 
-  filter(type == "SDR") %>% 
-  mutate(spread = abs(si.legacy - si.new)) %>% 
-  ggplot(aes(x = n, y = spread)) +
-  geom_line() +
-  facet_grid(video~.)
+# df.siti %>% 
+#   filter(type == "SDR") %>% 
+#   mutate(spread = abs(si.legacy - si.new)) %>% 
+#   ggplot(aes(x = n, y = spread)) +
+#   geom_line() +
+#   facet_grid(video~.)
 
 # does it depend on luminance?
 df.siti %>% 
@@ -128,6 +134,7 @@ df.siti %>%
   geom_pointdensity() +
   scale_color_viridis_c() +
   facet_grid(video~.)
+ggsave("plots/spread_vs_luminance_corr.pdf")
 
 # over time
 df.siti %>% 
@@ -140,3 +147,4 @@ df.siti %>%
   ggplot(aes(x = n, y = value, color = name)) +
   geom_line() +
   facet_grid(video~.)
+ggsave("plots/spread_vs_luminance.pdf")
