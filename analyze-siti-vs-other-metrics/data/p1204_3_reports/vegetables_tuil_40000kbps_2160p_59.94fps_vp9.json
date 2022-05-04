@@ -1,0 +1,25 @@
+{
+    "date": "2021-03-04 11:00:42.311499",
+    "debug": {
+        "baseline": 4.765442234956009,
+        "coding_deg": 21.407930051570958,
+        "rf_pred": 4.464613568973143,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 0.0
+    },
+    "per_second": [
+        5.0,
+        4.74376225716694,
+        4.771744199697071,
+        4.631918754977083,
+        4.5657924248097475,
+        4.244495920841654,
+        4.488305086007493,
+        4.350574749613084,
+        4.444785644320285,
+        4.3588484258405575
+    ],
+    "per_sequence": 4.6150279019645755,
+    "video_basename": "vegetables_tuil_40000kbps_2160p_59.94fps_vp9.mkv",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/vegetables_tuil_40000kbps_2160p_59.94fps_vp9.mkv"
+}

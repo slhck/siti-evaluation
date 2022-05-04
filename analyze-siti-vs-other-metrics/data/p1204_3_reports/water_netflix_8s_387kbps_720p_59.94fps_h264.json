@@ -1,0 +1,23 @@
+{
+    "date": "2021-03-04 18:12:11.462113",
+    "debug": {
+        "baseline": 1.6650158529064973,
+        "coding_deg": 100.0,
+        "rf_pred": 1.5632179414954488,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 19.241736862576012
+    },
+    "per_second": [
+        1.608851591466587,
+        1.6365302466515153,
+        1.624865978336576,
+        1.6139388906966308,
+        1.6113005887197824,
+        1.607772367151477,
+        1.6077364371693905,
+        1.607527978830939
+    ],
+    "per_sequence": 1.6141168972009732,
+    "video_basename": "water_netflix_8s_387kbps_720p_59.94fps_h264.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/water_netflix_8s_387kbps_720p_59.94fps_h264.mp4"
+}

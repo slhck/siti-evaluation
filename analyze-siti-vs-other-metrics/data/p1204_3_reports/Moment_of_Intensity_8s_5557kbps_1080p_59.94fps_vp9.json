@@ -1,0 +1,23 @@
+{
+    "date": "2021-03-03 23:11:50.563879",
+    "debug": {
+        "baseline": 4.014740540105947,
+        "coding_deg": 23.394197807265684,
+        "rf_pred": 4.077644673968912,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 11.497589538727595
+    },
+    "per_second": [
+        3.9038863698933377,
+        4.010236503630868,
+        4.383952704487885,
+        4.029353423761969,
+        4.034316445685001,
+        4.137515445243025,
+        3.723058441989782,
+        4.1978348790009745
+    ],
+    "per_sequence": 4.04619260703743,
+    "video_basename": "Moment_of_Intensity_8s_5557kbps_1080p_59.94fps_vp9.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/Moment_of_Intensity_8s_5557kbps_1080p_59.94fps_vp9.mp4"
+}

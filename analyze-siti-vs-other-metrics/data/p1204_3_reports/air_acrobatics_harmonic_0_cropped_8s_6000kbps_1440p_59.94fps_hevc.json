@@ -1,0 +1,23 @@
+{
+    "date": "2021-03-03 20:27:27.654605",
+    "debug": {
+        "baseline": 4.209521532710478,
+        "coding_deg": 25.638954722128545,
+        "rf_pred": 4.1930734217674885,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 6.003029570567995
+    },
+    "per_second": [
+        3.27608245689306,
+        4.354298968458637,
+        4.441683602193756,
+        4.399467823634511,
+        4.407006806288662,
+        4.4206596393796795,
+        4.3457180367868835,
+        4.295767609264788
+    ],
+    "per_sequence": 4.201297477238983,
+    "video_basename": "air_acrobatics_harmonic_0_cropped_8s_6000kbps_1440p_59.94fps_hevc.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/air_acrobatics_harmonic_0_cropped_8s_6000kbps_1440p_59.94fps_hevc.mp4"
+}

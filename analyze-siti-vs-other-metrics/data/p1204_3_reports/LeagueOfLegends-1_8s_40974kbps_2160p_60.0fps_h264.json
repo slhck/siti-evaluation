@@ -1,0 +1,23 @@
+{
+    "date": "2021-03-03 22:16:32.073373",
+    "debug": {
+        "baseline": 4.990317874658724,
+        "coding_deg": 16.496275218944703,
+        "rf_pred": 4.862132066598188,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 0.0
+    },
+    "per_second": [
+        5.0,
+        5.0,
+        4.889226593671086,
+        4.86894559905525,
+        4.895985998722614,
+        4.9624144527448,
+        4.765909352334292,
+        4.773267266645028
+    ],
+    "per_sequence": 4.926224970628456,
+    "video_basename": "LeagueOfLegends-1_8s_40974kbps_2160p_60.0fps_h264.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/LeagueOfLegends-1_8s_40974kbps_2160p_60.0fps_h264.mp4"
+}

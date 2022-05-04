@@ -1,16 +1,4 @@
-# SI/TI Evaluation
-
-Author: Werner Robitza
-
-Evaluation of SI/TI metrics for encoding complexity within the VQEG NORM project.
-
-See the subdirectories:
-
-- `analyze-siti-new-vs-legacy`: Evaluation of legacy SI/TI vs. new SI/TI
-- `analyze-siti-resolution`: Evaluation of SI resolution dependency
-- `analyze-siti-vs-other-metrics`: Evaluation of SI/TI and other metrics wrt. compressibility (based on QoMEX 2021 paper)
-
-## License
+# License
 
 Copyright 2022 Werner Robitza.
 

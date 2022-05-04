@@ -1,0 +1,23 @@
+{
+    "date": "2021-03-03 21:50:36.346242",
+    "debug": {
+        "baseline": 1.0995877330171218,
+        "coding_deg": 61.876515735524485,
+        "rf_pred": 1.0,
+        "temporal_deg": 10.003650470625637,
+        "upscaling_deg": 32.48044415458403
+    },
+    "per_second": [
+        1.0474291204751542,
+        1.0,
+        1.0,
+        1.0958220553862066,
+        1.0973612974096565,
+        1.0687682713541977,
+        1.0454734052829435,
+        1.0831154173678699
+    ],
+    "per_sequence": 1.0497938665085609,
+    "video_basename": "fr-041_debris_3840x2160_60p_422_ffvhuff_4_8s_200kbps_360p_15.0fps_hevc.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/fr-041_debris_3840x2160_60p_422_ffvhuff_4_8s_200kbps_360p_15.0fps_hevc.mp4"
+}

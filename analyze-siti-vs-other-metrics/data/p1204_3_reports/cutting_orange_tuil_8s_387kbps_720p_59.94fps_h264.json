@@ -1,0 +1,23 @@
+{
+    "date": "2021-03-03 21:18:02.317572",
+    "debug": {
+        "baseline": 2.1219264059339586,
+        "coding_deg": 46.11901203938215,
+        "rf_pred": 1.8282618293104815,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 19.241736862576012
+    },
+    "per_second": [
+        2.1402011065856796,
+        1.9670821169335977,
+        2.0456329623759233,
+        1.907277835296596,
+        1.8906060009184649,
+        1.9329282220209418,
+        1.9546528261261669,
+        1.9556891125022022
+    ],
+    "per_sequence": 1.97509411762222,
+    "video_basename": "cutting_orange_tuil_8s_387kbps_720p_59.94fps_h264.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/cutting_orange_tuil_8s_387kbps_720p_59.94fps_h264.mp4"
+}

@@ -1,0 +1,23 @@
+{
+    "date": "2021-03-04 00:01:34.115938",
+    "debug": {
+        "baseline": 4.4083205191280355,
+        "coding_deg": 28.18501455115343,
+        "rf_pred": 4.159682728758721,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 0.0
+    },
+    "per_second": [
+        3.806373005455804,
+        4.222798411238811,
+        4.315453128666885,
+        4.38779102618241,
+        4.376010255702663,
+        4.4019044903270315,
+        4.405616475464136,
+        4.454300114557707
+    ],
+    "per_sequence": 4.284001623943379,
+    "video_basename": "Sparks_cut_13_15000kbps_2160p_59.94fps_hevc.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/Sparks_cut_13_15000kbps_2160p_59.94fps_hevc.mp4"
+}

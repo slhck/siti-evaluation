@@ -1,0 +1,23 @@
+{
+    "date": "2021-03-03 21:34:02.196215",
+    "debug": {
+        "baseline": 4.502507076065096,
+        "coding_deg": 26.48151791910975,
+        "rf_pred": 4.283191368050079,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 0.0
+    },
+    "per_second": [
+        2.9824569209128944,
+        3.9861195051801417,
+        4.831718233526703,
+        4.825668727997269,
+        4.83357215047579,
+        4.846993420464202,
+        4.856119996761626,
+        4.958828693335356
+    ],
+    "per_sequence": 4.392849222057587,
+    "video_basename": "Dancers_8s_22229kbps_2160p_60.0fps_hevc.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/Dancers_8s_22229kbps_2160p_60.0fps_hevc.mp4"
+}

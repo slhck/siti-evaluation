@@ -1,0 +1,24 @@
+{
+    "date": "2021-03-04 09:55:25.151252",
+    "debug": {
+        "baseline": 4.554759898183617,
+        "coding_deg": 25.51408712057676,
+        "rf_pred": 4.298941294749497,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 0.0
+    },
+    "per_second": [
+        4.596900865951089,
+        5.0,
+        4.93404629429131,
+        4.699505361288026,
+        4.404816906289767,
+        4.20081684273408,
+        3.981511467394245,
+        3.8566013037112885,
+        3.787035532322901
+    ],
+    "per_sequence": 4.426850596466557,
+    "video_basename": "surfing_sony_8bit_40000kbps_2160p_59.94fps_vp9.mkv",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/surfing_sony_8bit_40000kbps_2160p_59.94fps_vp9.mkv"
+}

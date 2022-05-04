@@ -1,14 +1,24 @@
-# SI/TI Evaluation
+# SI/TI vs. other metrics and compressibility
 
-Author: Werner Robitza
+Comparison of SI/TI and other metrics vs. compressibility.
 
-Evaluation of SI/TI metrics for encoding complexity within the VQEG NORM project.
+This is a fully reproducible example of the following publication:
 
-See the subdirectories:
+Robitza, W., Rao Ramachandra Rao, R., Göring, S., & Raake, A. (2021). Impact of spatial and temporal information on video quality and compressibility. 2021 13th International Conference on Quality of Multimedia Experience, QoMEX 2021, 65–68.
 
-- `analyze-siti-new-vs-legacy`: Evaluation of legacy SI/TI vs. new SI/TI
-- `analyze-siti-resolution`: Evaluation of SI resolution dependency
-- `analyze-siti-vs-other-metrics`: Evaluation of SI/TI and other metrics wrt. compressibility (based on QoMEX 2021 paper)
+## Requirements
+
+- RStudio
+
+## Data
+
+This uses the [AVT-VQDB-UHD1](https://github.com/Telecommunication-Telemedia-Assessment/AVT-VQDB-UHD-1) database.
+
+The data is already in the `data` directory.
+
+## Analysis
+
+Open the `siti_analysis.R` file and source the script.
 
 ## License
 

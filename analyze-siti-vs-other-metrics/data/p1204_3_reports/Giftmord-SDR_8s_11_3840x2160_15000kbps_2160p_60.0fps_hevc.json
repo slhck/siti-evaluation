@@ -1,0 +1,23 @@
+{
+    "date": "2021-03-03 21:58:36.026355",
+    "debug": {
+        "baseline": 4.1686969696247385,
+        "coding_deg": 32.332823344127775,
+        "rf_pred": 4.227947371120739,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 0.0
+    },
+    "per_second": [
+        3.8585994200366076,
+        4.188873228388402,
+        4.257960107355286,
+        4.244225608092757,
+        4.278935275709085,
+        4.264599108551503,
+        4.261789812197902,
+        4.267472532446998
+    ],
+    "per_sequence": 4.198322170372739,
+    "video_basename": "Giftmord-SDR_8s_11_3840x2160_15000kbps_2160p_60.0fps_hevc.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/Giftmord-SDR_8s_11_3840x2160_15000kbps_2160p_60.0fps_hevc.mp4"
+}

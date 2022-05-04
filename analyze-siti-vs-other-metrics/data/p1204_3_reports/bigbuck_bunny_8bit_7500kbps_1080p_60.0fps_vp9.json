@@ -1,0 +1,25 @@
+{
+    "date": "2021-03-03 20:55:10.917411",
+    "debug": {
+        "baseline": 4.103007318261123,
+        "coding_deg": 21.93548071936044,
+        "rf_pred": 4.228214329944573,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 11.497589538727595
+    },
+    "per_second": [
+        5.0,
+        4.7997593020664775,
+        5.0,
+        4.29518090367648,
+        3.855768512989126,
+        3.298686409348038,
+        4.718512050890193,
+        4.195617136785508,
+        3.042432043753471,
+        4.155163528028624
+    ],
+    "per_sequence": 4.165610824102848,
+    "video_basename": "bigbuck_bunny_8bit_7500kbps_1080p_60.0fps_vp9.mkv",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/bigbuck_bunny_8bit_7500kbps_1080p_60.0fps_vp9.mkv"
+}

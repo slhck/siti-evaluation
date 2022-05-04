@@ -1,0 +1,23 @@
+{
+    "date": "2021-03-03 21:49:04.158037",
+    "debug": {
+        "baseline": 3.916447938657142,
+        "coding_deg": 30.490365500142005,
+        "rf_pred": 4.05938800969215,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 6.003029570567995
+    },
+    "per_second": [
+        3.173827370584671,
+        3.816422743989162,
+        3.9259703144903195,
+        4.035604580801751,
+        4.168167995837642,
+        4.224476755007898,
+        4.442997429142441,
+        4.449470376674588
+    ],
+    "per_sequence": 3.987917974174646,
+    "video_basename": "Daydreamer_SDR_8s_3840x2160_8_8000kbps_1440p_60.0fps_hevc.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/Daydreamer_SDR_8s_3840x2160_8_8000kbps_1440p_60.0fps_hevc.mp4"
+}

@@ -1,0 +1,24 @@
+{
+    "date": "2021-03-03 20:36:42.256876",
+    "debug": {
+        "baseline": 2.0395675884779054,
+        "coding_deg": 47.61123297323442,
+        "rf_pred": 1.9940514126392976,
+        "temporal_deg": 0.0,
+        "upscaling_deg": 19.241736862576012
+    },
+    "per_second": [
+        1.9696874648885714,
+        2.0129507504586415,
+        2.0059329318289736,
+        1.9839970054235567,
+        2.03503832196985,
+        2.0582184388656604,
+        2.0316723133837455,
+        2.0278112246619804,
+        2.008438254510085
+    ],
+    "per_sequence": 2.0168095005586015,
+    "video_basename": "american_football_harmonic_750kbps_720p_59.94fps_hevc.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/american_football_harmonic_750kbps_720p_59.94fps_hevc.mp4"
+}

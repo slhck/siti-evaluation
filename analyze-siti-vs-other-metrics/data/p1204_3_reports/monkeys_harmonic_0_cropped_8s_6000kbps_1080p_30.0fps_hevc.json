@@ -1,0 +1,23 @@
+{
+    "date": "2021-03-03 23:45:40.894266",
+    "debug": {
+        "baseline": 3.5247472779420272,
+        "coding_deg": 26.969450641894127,
+        "rf_pred": 3.835906542542784,
+        "temporal_deg": 4.24464617766511,
+        "upscaling_deg": 11.497589538727595
+    },
+    "per_second": [
+        3.4998950657905405,
+        3.608795538047205,
+        3.7012010516072835,
+        3.695507715289337,
+        3.752947445337239,
+        3.7382054118921797,
+        3.7153045658309742,
+        3.7454202618806436
+    ],
+    "per_sequence": 3.680326910242406,
+    "video_basename": "monkeys_harmonic_0_cropped_8s_6000kbps_1080p_30.0fps_hevc.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/monkeys_harmonic_0_cropped_8s_6000kbps_1080p_30.0fps_hevc.mp4"
+}

@@ -1,0 +1,23 @@
+{
+    "date": "2021-03-04 11:32:53.849502",
+    "debug": {
+        "baseline": 3.7583740622216006,
+        "coding_deg": 28.780971383436622,
+        "rf_pred": 4.087860919944031,
+        "temporal_deg": 4.24464617766511,
+        "upscaling_deg": 6.003029570567995
+    },
+    "per_second": [
+        3.795549428946237,
+        3.9918019216256266,
+        3.996674434880508,
+        4.022140677726023,
+        4.066720456945463,
+        3.956649597836103,
+        3.8446616881986033,
+        3.736299837184106
+    ],
+    "per_sequence": 3.9231174910828157,
+    "video_basename": "venice_harmonic_2_cropped_8s_4000kbps_1440p_30.0fps_hevc.mp4",
+    "video_full_path": "/media/data01/AVT-VQDB-UHD-1/segments/venice_harmonic_2_cropped_8s_4000kbps_1440p_30.0fps_hevc.mp4"
+}
