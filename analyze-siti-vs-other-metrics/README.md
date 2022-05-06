@@ -16,6 +16,13 @@ This uses the [AVT-VQDB-UHD1](https://github.com/Telecommunication-Telemedia-Ass
 
 The data is already in the `data` directory.
 
+To recreate the data for the CRF-based encoding, you need:
+
+- GNU parallel
+- ffmpeg
+
+and run the `./analyze-crf.sh` script.
+
 ## Analysis
 
 Open the `siti_analysis.R` file and source the script.

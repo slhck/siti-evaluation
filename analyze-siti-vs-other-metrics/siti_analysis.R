@@ -233,6 +233,24 @@ df.siti_criticality = df.siti %>%
     criticality = log10(mean(criticality_per_frame))
   )
 
+# Explanatory variables: CRF
+df.crf_based_encoding_complexity = 
+  read_csv("data/crf_file_sizes.csv") %>% 
+  rename(src = input_file) %>% 
+  mutate(
+    norm_crf_bpp = (size_in_bytes * 8) / (width * height * framerate * duration),
+    crf_enc_cmp = log10(norm_crf_bpp)
+  ) %>% 
+  select(-width, -height, -framerate, -duration, -size_in_bytes)
+  # pivot_wider(
+  #   id_cols = src,
+  #   names_from = c(encoder, crf_value),
+  #   values_from = c(crf_enc_cmp),
+  #   names_prefix = "crf_enc_cmp-"
+  # )
+
+# TODO evaluate this complexity
+
 # ========================================================================================================
 # COMBINE TESTS 2 and 3
 
