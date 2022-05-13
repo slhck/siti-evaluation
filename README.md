@@ -9,6 +9,7 @@ See the subdirectories:
 - `analyze-siti-new-vs-legacy`: Evaluation of legacy SI/TI vs. new SI/TI
 - `analyze-siti-resolution`: Evaluation of SI resolution dependency
 - `analyze-siti-vs-other-metrics`: Evaluation of SI/TI and other metrics wrt. compressibility (based on QoMEX 2021 paper)
+- `siti-plots`: Example plots for SI/TI scores
 
 ## License
 
