@@ -14,5 +14,6 @@ fi
 
 parallel --jobs 1 --eta --progress 'ffmpeg -i {} -c:v rawvideo -pix_fmt yuv420p {.}-420p.avi' ::: "$1"/*.avi
 
-parallel --tag --eta 'siti-tools --color-range=full {} > {.}-siti.json' ::: "$1/"*420p.avi
+parallel --tag --eta 'siti-tools --color-range=full -f csv {} > {.}-siti.csv' ::: "$1/"*420p.avi
 
+cp "$1"/*-siti.csv data/
