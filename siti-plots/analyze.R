@@ -96,13 +96,22 @@ df.siti_summarized %>%
   geom_label_repel(family = "Times") +
   xlab("Mean SI") +
   ylab("Mean TI") +
-  # coord_cartesian(
-  #   xlim = c(0, max((df.siti_summarized %>% filter(dataset == "vqeghd1"))$max_si)),
-  #   ylim = c(0, max((df.siti_summarized %>% filter(dataset == "vqeghd1"))$max_ti)),
-  # )
   theme(legend.position = "none") +
   {}
 ggsave("plots/mean_si_ti.pdf")
+
+df.siti_summarized %>% 
+  filter(dataset == "vqeghd1") %>% 
+  ggplot(., aes(x = mean_si, y = mean_ti, label = src)) +
+  geom_point() +
+  geom_linerange(aes(ymin = p_lower_ti, ymax = p_upper_ti), color = "#CCCCCC") +
+  geom_linerange(aes(xmin = p_lower_si, xmax = p_upper_si), color = "#CCCCCC") +
+  geom_label_repel(family = "Times") +
+  xlab("Mean SI") +
+  ylab("Mean TI") +
+  theme(legend.position = "none") +
+  {}
+ggsave("plots/mean_si_ti-bw.pdf", scale = 0.5)
 
 df.siti_summarized %>% 
   filter(dataset == "vqeghd1") %>% 
