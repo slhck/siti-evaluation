@@ -11,12 +11,35 @@ Comparison of new SI/TI vs other metrics on joint dataset.
 
 SITI-Tools:
 
-```
+```bash
+cd /path/to/where/you/install/software
 git clone https://github.com/VQEG/siti-tools
 pip3 install .
 ```
 
+VCA:
+
+```bash
+cd /path/to/where/you/install/software
+git clone https://github.com/cd-athena/VCA.git
+cd VCA
+mkdir build
+cd build
+cmake ../
+cmake --build .
+```
+
 Download the source video El Fuente (to be supplied in CDVL).
+
+## Calculation
+
+```bash
+./calculate_siti.sh /path/to/ElFuente/
+
+# modify as needed
+VCAPATH=/path/to/where/you/install/software/VCA/build/source/apps/vca/
+PATH=$VCAPATH:$PATH ./calculate_vca.sh /path/to/ElFuente/
+```
 
 ## License
 

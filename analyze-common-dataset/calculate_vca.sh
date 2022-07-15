@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Calculate SI/TI on El Fuente dataset
+# Calculate VCA on El Fuente dataset
 
 set -e
 
@@ -9,8 +9,8 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-if ! command -v siti-tools; then
-    echo "siti-tools not found"
+if ! command -v vca; then
+    echo "vca not found"
     exit 1
 fi
 
@@ -26,10 +26,10 @@ cd "$(dirname "$0")" || exit 1
 
 files=$(find "$dataset" -name "*.y4m")
 
-echo "Calculating SI/TI on $dataset with $(wc -l <<< "$files") files"
+echo "Calculating VCA on $dataset with $(wc -l <<< "$files") files"
 
-rm -f "siti-jobs.log"
-mkdir -p data/siti
+rm -f "vca-jobs.log"
+mkdir -p data/vca
 
 # record the execution time
 start_time=$(date +%s)
@@ -37,16 +37,10 @@ start_time=$(date +%s)
 # process files in parallel
 parallel \
   --eta --progress --bar \
-  --joblog "siti-jobs.log" \
-  "siti-tools {} -f json -r full > data/siti/{/.}.json" ::: "$files"
+  --joblog "vca-jobs.log" \
+  "vca --input {} --complexity-csv data/vca/{/.}-complexity.csv" ::: "$files"
 
 end_time=$(date +%s)
 echo "Execution time: $((end_time - start_time)) seconds"
 
 echo "Done"
-
-echo "Converting logs"
-parallel "./convert-json-to-csv.py {} {.}.csv" ::: data/siti/*.json
-
-echo "Done"
-
