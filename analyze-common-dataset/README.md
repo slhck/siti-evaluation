@@ -1,16 +1,22 @@
-# SI/TI Evaluation
+# Common Dataset Analysis
 
-Author: Werner Robitza
+Comparison of new SI/TI vs other metrics on joint dataset.
 
-Evaluation of SI/TI and other metrics for encoding complexity within the VQEG NORM project.
+## Requirements
 
-See the subdirectories:
+- FFmpeg
+- GNU `parallel`
+- Python 3.8 or higher
+- RStudio
 
-- `analyze-common-dataset`: Evaluation of a common dataset with different metrics
-- `analyze-siti-new-vs-legacy`: Evaluation of legacy SI/TI vs. new SI/TI
-- `analyze-siti-resolution`: Evaluation of SI resolution dependency
-- `analyze-siti-vs-other-metrics`: Evaluation of SI/TI and other metrics wrt. compressibility (based on QoMEX 2021 paper)
-- `siti-plots`: Example plots for SI/TI scores
+SITI-Tools:
+
+```
+git clone https://github.com/VQEG/siti-tools
+pip3 install .
+```
+
+Download the source video El Fuente (to be supplied in CDVL).
 
 ## License
 
