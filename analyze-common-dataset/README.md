@@ -41,6 +41,15 @@ VCAPATH=/path/to/where/you/install/software/VCA/build/source/apps/vca/
 PATH=$VCAPATH:$PATH ./calculate_vca.sh /path/to/ElFuente/
 ```
 
+## Data Analysis
+
+The data committed here is based on:
+
+- siti-tools v0.2.1
+- Video Complexity Analyzer v1.5+2-g9f209dc
+
+To analyze it, run `analyze.R`.
+
 ## License
 
 Copyright 2022 Werner Robitza.
