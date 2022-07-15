@@ -28,7 +28,6 @@ files=$(find "$dataset" -name "*.y4m")
 
 echo "Calculating VCA on $dataset with $(wc -l <<< "$files") files"
 
-rm -f "vca-jobs.log"
 mkdir -p data/vca
 
 # record the execution time
@@ -37,7 +36,7 @@ start_time=$(date +%s)
 # process files in parallel
 parallel \
   --eta --progress --bar \
-  --joblog "vca-jobs.log" \
+  --joblog "logs/vca-jobs.log" \
   "vca --input {} --complexity-csv data/vca/{/.}-complexity.csv" ::: "$files"
 
 end_time=$(date +%s)

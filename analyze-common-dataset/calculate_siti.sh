@@ -28,7 +28,6 @@ files=$(find "$dataset" -name "*.y4m")
 
 echo "Calculating SI/TI on $dataset with $(wc -l <<< "$files") files"
 
-rm -f "siti-jobs.log"
 mkdir -p data/siti
 
 # record the execution time
@@ -37,7 +36,7 @@ start_time=$(date +%s)
 # process files in parallel
 parallel \
   --eta --progress --bar \
-  --joblog "siti-jobs.log" \
+  --joblog "logs/siti-jobs.log" \
   "siti-tools {} -f json -r full > data/siti/{/.}.json" ::: "$files"
 
 end_time=$(date +%s)
