@@ -32,7 +32,7 @@ echo "Encoding on $dataset with $(wc -l <<< "$files") files"
 # qpValues=($(seq 16 3 51))
 # resolutions=(360 480 720 1080)
 qpValues=(16 18 20 22 24 26 28 30 32 34 36 38 40)
-resolutions=(1080)
+resolutions=(360 480 720 1080)
 
 mkdir -p "$output"
 for qp in "${qpValues[@]}"; do
@@ -60,10 +60,10 @@ for qp in "${qpValues[@]}"; do
           "ffmpeg -y -i {} -c:v libvpx-vp9 -crf $qp -b:v 0 -filter:v scale=-2:$resolution $output/{/.}-$suffix.mkv" ::: "$files"
 
       
-      suffix="av1-$qp-$resolution"
-      parallel \
-          --eta --progress --bar \
-          --joblog "logs/encode-$suffix--jobs.log" \
-          "ffmpeg -y -i {} -c:v libaom-av1 -crf $qp -b:v 0 -filter:v scale=-2:$resolution $output/{/.}-$suffix.mkv" ::: "$files"
+      # suffix="av1-$qp-$resolution"
+      # parallel \
+      #     --eta --progress --bar \
+      #     --joblog "logs/encode-$suffix--jobs.log" \
+      #     "ffmpeg -y -i {} -c:v libaom-av1 -crf $qp -b:v 0 -filter:v scale=-2:$resolution $output/{/.}-$suffix.mkv" ::: "$files"
     done
 done
